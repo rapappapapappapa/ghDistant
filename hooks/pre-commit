@@ -1,0 +1,21 @@
+#!/bin/bash
+# Hook pre-commit : enregistre un fichier de suivi si l'utilisateur repond 'y'
+# Installation : copier ce fichier vers .git/hooks/pre-commit
+# puis : chmod +x .git/hooks/pre-commit
+
+mkdir -p suivi
+
+read -p "Enregistrer le suivi de commit (y/[n]) ? " yn < /dev/tty
+yn=${yn:-n}
+
+case $yn in
+[Yy]* )
+    echo "commit verifie le $(date)" > suivi/commitInfo.txt
+    git add suivi/commitInfo.txt
+    exit 0
+    ;;
+[Nn]* )
+    exit 0
+    ;;
+esac
+exit 0
