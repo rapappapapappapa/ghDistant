@@ -1,0 +1,15 @@
+Algo HelloWorld {
+fonction principale {
+// Creation de la fenetre
+Creer une fenetre de titre 'Hello world'
+Mettre la dimension a 200, 200
+Configurer la fenetre sur 'exitOnClose'
+// Creation du label de texte
+Creer un label avec du texte centre et contenant le texte 'Hello world'
+Creer la couleur jaune
+Mettre la couleur jaune sur le label
+// Finalisation
+Ajouter le label sur la fenetre
+Afficher la fenetre
+}
+}
