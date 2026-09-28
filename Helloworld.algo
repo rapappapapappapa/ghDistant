@@ -4,6 +4,7 @@ fonction principale {
 Creer une fenetre de titre HELLO_WORLD_TITLE
 Mettre la dimension a 300, 250
 Configurer la fenetre sur 'exitOnClose'
+Mettre la couleur de fond de la fenetre en jaune
 // Creation du label de texte
 Creer un label avec du texte centre et contenant le texte HELLO_WORLD_TEXT
 Creer la couleur jaune
